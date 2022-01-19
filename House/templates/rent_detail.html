@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+<div class="innercontent">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        
+        
+        
+      </div>
+      <div class="col-lg-8"> 
+        <!-- Place somewhere in the <body> of your page -->
+        
+        <div class="property_details">
+          <div class="row property_head wow fadeInUp">
+            <div class="col-lg-8 col-md-8">
+              <h3>{{form.title}}</h3>
+              <div class="property_address">{{ form.Address }}</div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <div class="heart_info">
+                <!-- <div class="heart_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></div> -->
+                <!-- <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div> -->
+                <!-- <div class="property_price">{{form.price}} تومان</div> -->
+              </div>
+            </div>
+          </div>
+          
+          <div class="property_widget wow fadeInUp">
+            <h3 class="desc_head">جزئیات ملک</h3>
+            <div class="row prop_del">
+              <div class="col-lg-6">
+                <ul class="property_list">
+                  <li><span>فاز  :</span> {{ form.phase }}</li>
+                  <li><span>رهن :</span> {{form.rahn}} تومان</li>
+                  <li><span>اجاره :</span> {{form.ejare}} تومان</li>
+                  <li><span>مشاور :</span><a href="tel:{{form.moshaver.phone}}"> {{ form.moshaver.name }}</a></li>
+                  <!-- <li><span>حمام :</span> 2</li> -->
+                  <li><span>اتاق خواب :</span> {{ form.room }}</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="property_list">
+                  <!-- <li><span>سال ساخته :</span> 30-6-1399</li> -->
+                  <!-- <li><span>پارکینگ :</span> 1</li> -->
+                  <li><span>اندازه املاک :</span> {{form.size}} متر مربع</li>
+                  <li><span>پروژه :</span>{{form.elsei2}} </li>
+                  <li><span>وضعیت ملک :</span> {{ form.position }}</li>
+                  <li><span>طبقه :</span> {{ form.Floor }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="property_widget wow fadeInUp">
+            <h3 class="desc_head">توضیحات</h3>
+            <p>{{ form.elsei }}</p>
+            
+          </div>
+          
+          
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Inner Content End--> 
+{% endblock %}

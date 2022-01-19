@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+
+<!--Inner Heading Start-->
+<div class="innerHeading">
+  <div class="container">
+    <h1>ورود</h1>
+  </div>
+</div>
+<!--Inner Heading End--> 
+
+<!--Inner Content Start-->
+<div class="innercontent">
+  <div class="container">
+    <div class="card mx-auto loginWrp wow fadeInUp">
+      <div class="card-body">
+        <h4 class="card-title mb-4">ورود</h4>
+        <form action="" method="post" >
+          {% csrf_token %}
+          <div class="form-group">
+            <input name="email" class="form-control" placeholder="ایمیل" type="text">
+          </div>
+          <div class="form-group">
+            <input name="phone" class="form-control" placeholder="شماره" type="text">
+          </div>
+          <!-- form-group// -->
+          <div class="form-group">
+            <input  name="password" class="form-control" placeholder="کلمه عبور" type="password">
+          </div>
+          <!-- form-group// -->
+          
+          
+          <!-- form-group form-check .// -->
+          <div class="form-group">
+            <button type="submit" class="btn login_btn btn-primary btn-block"> ورود </button>
+          </div>
+          <!-- form-group// -->
+        </form>
+      </div>
+      <!-- card-body.// --> 
+    </div>
+    
+  </div>
+</div>
+
+<!--Inner Content End--> 
+
+{% endblock %}

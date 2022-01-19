@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+<!--Inner Heading Start-->
+<div class="innerHeading">
+  <div class="container">
+    <h1>فایل های من</h1>
+  </div>
+</div>
+<!--Inner Heading End--> 
+
+<!--Inner Content Start-->
+<div class="innercontent">
+  <div class="container">
+    <div class="row listing_wrap">
+      <div class="col-lg-4">
+        
+        
+        
+      </div>
+      <div class="col-lg-8">
+        
+        
+        <!--Row Start-->
+        
+        <ul class="row">
+          {% for result in result_list %}
+          <!--col-lg-4 Start-->
+          <li class="col-lg-6">
+            <div class="property_box wow fadeInUp">
+              {% if result.position == 'اجاره' %}
+              <h3><a href="{% url 'bayatamlak:rent_detail' result.id %}">{{result.title}}</a></h3>
+              {% elif result.position == 'فروشی' %}
+              <h3><a href="{% url 'bayatamlak:sell_detail' result.id %}">{{result.title}}</a></h3>
+              {% elif result.position == 'درخواست خرید' %}
+              <h3><a href="{% url 'bayatamlak:req_buy_detail' result.id %}">{{result.title}}</a></h3>
+              {% elif result.position == 'درخواست اجاره' %}
+              <h3><a href="{% url 'bayatamlak:req_rent_detail' result.id %}">{{result.title}}</a></h3>
+              {% endif %}
+              {% if result.rahn  %}
+              <div class="property_price">{{result.rahn}}  تومان رهن</div>
+              <div class="heart_info">
+                <div class="heart_icon"><a href="#"><i class="fas fa-heart"></i></a></div>
+                <!-- <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div> -->
+                <div class="property_price"> {{result.ejare}}  تومان اجاره </div> 
+              </div>
+              {% elif result.price %}
+              <div class="property_price">{{result.price}}  تومان </div>
+              <div class="heart_info">
+                <div class="heart_icon"><a href="#"><i class="fas fa-heart"></i></a></div>
+                <!-- <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div> -->
+                <div class="property_price"> {{result.ejare}}    </div> 
+              </div>
+              {% elif result.mojodi %}
+              <div class="property_price">{{result.mojodi}}  تومان </div>
+              <div class="heart_info">
+                <div class="heart_icon"><a href="#"><i class="fas fa-heart"></i></a></div>
+                <!-- <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div> -->
+                <div class="property_price"> {{result.ejare}}    </div> 
+              </div>
+              {% endif %}
+              <div class="propert_info">
+                <ul class="row">
+                  <li class="col-4">
+                    
+                    <h5>اتاق خواب {{result.room}}</h5>
+                  </li>
+                  <li class="col-4">
+                    
+                    <h5> فاز {{result.phase}}</h5>
+                  </li>
+                  <li class="col-4">
+                    
+                    <h5> پروژه {{ result.elsei2}}</h5>
+                  </li>
+                </ul>
+              </div>
+              <div class="rent_info">
+                <div class="apart"><a href="tel:{{ result.Phone }}">{{ result.Name }}</a></div>
+                <div class="sale">{{result.position}}</div>
+              </div>
+            </div>
+          </li>
+          <!--col-lg-4 End--> 
+          {% endfor %}
+          <!--col-lg-4 Start-->
+          
+          
+        </ul>
+        <!--Row End-->
+        
+        <!-- <div class="blog-pagination text-center"> <a href="#0"><i class="fas fa-angle-right"></i></a> <a href="#0">1</a> <a href="#0" class="active">2</a> <a href="#0">3</a> <a href="#0"><i class="fas fa-angle-left"></i></a> </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Inner Content End--> 
+{% endblock %}

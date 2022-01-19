@@ -1,0 +1,163 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+<!--Header End--> 
+
+<!--Inner Heading Start-->
+<div class="innerHeading">
+  <div class="container">
+    <h1>وبلاگ شبکه ای</h1>
+  </div>
+</div>
+<!--Inner Heading End--> 
+
+<!--Inner Content Start-->
+<div class="innercontent">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <ul class="row blog_post">
+          {% for rent in result_list %}
+          <li class="col-lg-6 col-md-2">
+            
+            <div class="property_box wow fadeInUp">
+             
+              <h3>{{rent.title}}</h3>
+              <div class="post-meta"> <span>21 اسفند 1399</span> <span>15 نظر</span> <span>15 لایک</span> </div>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+            </div>
+            
+          </li>
+          {% endfor %}
+          <li class="col-lg-6 col-md-2">
+            <div class="property_box wow fadeInUp">
+              
+              <h3><a href="#">آپارتمان با کیفیت فروشی</a></h3>
+              <div class="post-meta"> <span>21 اسفند 1399</span> <span>15 نظر</span> <span>15 لایک</span> </div>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون. </p>
+            </div>
+          </li>
+          <li class="col-lg-6 col-md-6">
+            <div class="property_box wow fadeInUp">
+              
+              <h3><a href="#">آپارتمان با کیفیت فروشی</a></h3>
+              <div class="post-meta"> <span>21 اسفند 1399</span> <span>15 نظر</span> <span>15 لایک</span> </div>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون. </p>
+            </div>
+          </li>
+          <li class="col-lg-6 col-md-6">
+            <div class="property_box wow fadeInUp">
+              
+              <h3><a href="#">قسمت فوقانی آپارتمان برای اجاره</a></h3>
+              <div class="post-meta"> <span>21 اسفند 1399</span> <span>15 نظر</span> <span>15 لایک</span> </div>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+            </div>
+          </li>
+          <li class="col-lg-6 col-md-6">
+            <div class="property_box wow fadeInUp">
+              <div class="propertyImg"><img alt="" src="images/blog04.jpg"></div>
+              <h3><a href="#">قسمت فوقانی آپارتمان برای اجاره</a></h3>
+              <div class="post-meta"> <span>21 اسفند 1399</span> <span>15 نظر</span> <span>15 لایک</span> </div>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+            </div>
+          </li>
+          <li class="col-lg-6 col-md-6">
+            <div class="property_box wow fadeInUp">
+              <div class="propertyImg"><img alt="" src="images/blog05.jpg"></div>
+              <h3><a href="#">آپارتمان با کیفیت فروشی</a></h3>
+              <div class="post-meta"> <span>21 اسفند 1399</span> <span>15 نظر</span> <span>15 لایک</span> </div>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون. </p>
+            </div>
+          </li>
+          <li class="col-lg-6 col-md-6">
+            <div class="property_box wow fadeInUp">
+              <div class="propertyImg"><img alt="" src="images/blog07.jpg"></div>
+              <h3><a href="#">قسمت فوقانی آپارتمان برای اجاره</a></h3>
+              <div class="post-meta"> <span>21 اسفند 1399</span> <span>15 نظر</span> <span>15 لایک</span> </div>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ.</p>
+            </div>
+          </li>
+          <li class="col-lg-6 col-md-6">
+            <div class="property_box wow fadeInUp">
+              <div class="propertyImg"><img alt="" src="images/blog01.jpg"></div>
+              <h3><a href="#">آپارتمان با کیفیت فروشی</a></h3>
+              <div class="post-meta"> <span>21 اسفند 1399</span> <span>15 نظر</span> <span>15 لایک</span> </div>
+              <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون. </p>
+            </div>
+          </li>
+        </ul>
+        <div class="blog-pagination text-center"> <a href="#0"><i class="fas fa-angle-right"></i></a> <a href="#0">1</a> <a href="#0" class="active">2</a> <a href="#0">3</a> <a href="#0"><i class="fas fa-angle-left"></i></a> </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="single-widgets widget_search fadeInRight wow">
+          <h4>جستجو</h4>
+          <form action="#" class="sidebar-search-form">
+            <input type="search" name="search" placeholder="جستجو...">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+        </div>
+        <div class="single-widgets widget_category fadeInRight wow">
+          <h4>دسته بندی ها</h4>
+          <ul>
+            <li><a href="#">آپارتمان <span>9</span></a></li>
+            <li><a href="#">ویلا <span>12</span></a></li>
+            <li><a href="#">خانه <span>19</span></a> </li>
+            <li><a href="#">ویلای مدرن <span>17</span></a></li>
+            <li><a href="#">خانه شهری <span>10</span></a></li>
+            <li><a href="#">دفتر <span>10</span></a></li>
+          </ul>
+        </div>
+        <div class="single-widgets widget_category fadeInRight wow">
+          <h4>املاک اخیر</h4>
+          <ul class="property_sec">
+            <li>
+              <div class="rec_proprty">
+                <div class="propertyImg"><img src="images/property_small01.jpg"></div>
+                <div class="property_info">
+                  <h4><a href="#">ایران , تهران , زعفرانیه</a></h4>
+                  <p>خیابان هستی , ساختمان مهر</p>
+                  <div class="priceWrp">98000 تومان</div>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="rec_proprty">
+                <div class="propertyImg"><img src="images/property_small02.jpg"></div>
+                <div class="property_info">
+                  <h4><a href="#">ایران , تهران , زعفرانیه</a></h4>
+                  <p>خیابان هستی , ساختمان مهر</p>
+                  <div class="priceWrp">98000 تومان</div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="single-widgets widget_category fadeInRight wow">
+          <h4>بایگانی</h4>
+          <ul class="categories">
+            <li><a href="#">بهمن 1399 </a></li>
+            <li><a href="#">فروردین 1398 </a></li>
+            <li><a href="#">مرداد 1397 </a></li>
+          </ul>
+        </div>
+        <div class="single-widgets widget_category fadeInRight wow">
+          <h4>برچسب ها</h4>
+          <ul class="tags">
+            <li><a href="#">خانه</a></li>
+            <li><a href="#">داخلی</a></li>
+            <li><a href="#">آپارتمان</a></li>
+            <li><a href="#">مشاور املاک</a></li>
+            <li><a href="#">لوکس</a></li>
+            <li><a href="#">اجاره</a></li>
+            <li><a href="#">نمایندگان</a></li>
+            <li><a href="#">فروش</a></li>
+            <li><a href="#">خانواده</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Inner Content End--> 
+
+{% endblock %}

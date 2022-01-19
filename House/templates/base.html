@@ -1,0 +1,158 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+<link href="{% static 'assets/css/all.css' %}" rel="stylesheet">
+<!-- Owl Carousel CSS -->
+<link href="{% static 'assets/css/owl.carousel.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+<link href="{% static 'assets/css/animate.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<title>Real Estate</title>
+</head>
+<body>
+
+
+<!--Header Start-->
+<div class="header-wrap wow fadeInUp">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 navbar navbar-expand-lg navbar-light">
+        <!-- <div class="header_logo"><a href="#"><img src="{% static 'assets/images/logo.png' %}"></a></div> -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      </div>
+      <div class="col-lg-9">
+        <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="#">Navbar</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="close-toggler" type="button" data-toggle="offcanvas"> <span><i class="fas fa-times-circle" aria-hidden="true"></i></span> </button>
+            <ul class="navbar-nav mr-auto">
+              <!-- <li class="nav-item"><a class="nav-link" href="{% url 'bayatamlak:home' %}">ورود/a></li> -->
+              <!-- <li class="nav-item"><a class="nav-link" href="{% url 'bayatamlak:home' %}"> خانه</a></li> -->
+              <li class="nav-item active"><a class="nav-link" href="index.html"> ثبت <span class="caret"><i class="fas fa-caret-down"></i></span></a> <i class="fas fa-caret-down"></i>
+                <ul class="submenu">
+                  <li><a href="{% url 'bayatamlak:reqbuy' %}"> ثبت درخواست خرید</a></li>
+                  <li><a href="{% url 'bayatamlak:reqrent' %}"> ثبت درخواست اجاره </a></li>
+                  <li><a href="{% url 'bayatamlak:submitsell' %}">ثبت  فایل فروش</a></li>
+                  <li><a href="{% url 'bayatamlak:submitrent' %}"> ثبت فایل اجاره</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'bayatamlak:home' %}">ورود</a></li>
+              <li class="nav-item"><a class="nav-link" href="{% url 'bayatamlak:myfiles' %}">فایل های من</a></li>
+                
+              
+              <li class="nav-item"><a class="nav-link" href="{% url 'bayatamlak:reqbuys' %}">درخواست های خرید</a></li>
+                
+              
+              <li class="nav-item"><a class="nav-link" href="{% url 'bayatamlak:reqrents' %}">درخواست های اجاره</a></li>
+                
+              
+              <li class="nav-item"><a class="nav-link" href="{% url 'bayatamlak:submitsells' %}"> فایل های فروشی </a></li>
+                
+              
+              <li class="nav-item"><a class="nav-link" href="{% url 'bayatamlak:submitrents' %}">فایل های اجاره</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Header End--> 
+        {% block base %}
+        {% endblock %}
+        <!--Footer Start-->
+<footer class="footer bg-style wow fadeInUp">
+    <div class="container">
+      <div class="footer-upper">
+        <div class="row">
+          <div class="col-lg-3 col-md-12">
+            <div class="footer-widget about-widget"> <a href="#"> <img src="{% static 'assets/images/logo2.png' %}" alt="Awesome Image"> </a>
+              
+              
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3">
+            <div class="footer-widget quick-links">
+              <h3 class="title">لینک های سریع</h3>
+              <ul>
+                <!-- <li><a href="#."> خانه</a> </li>
+                <li><a href="#."> خصوصیات</a> </li>
+                <li><a href="#."> مشاوران</a> </li>
+                <li><a href="#."> وبلاگ</a> </li>
+                <li><a href="#."> تماس با ما</a> </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5">
+            <div class="footer-widget contact">
+              <h3 class="title">ویژگی های اخیر</h3>
+              <ul class="property_sec">
+                <li>
+                  <div class="rec_proprty">
+                    <div class="propertyImg"><img src="{% static 'assets/images/property_small01.jpg' %}"></div>
+                    <div class="property_info">
+                      <h4><a href="#">پرند میدان استقلال </a></h4>
+                      
+                      
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="rec_proprty">
+                    <div class="propertyImg"><img src="{% static 'assets/images/property_small02.jpg' %}"></div>
+                    <div class="property_info">
+                      <h4><a href="#">پرند میدان استقلال </a></h4>
+                      
+                      
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4">
+            <div class="footer-widget contact">
+              <h3 class="title">اطلاعات تماس</h3>
+              <ul class="footer-adress">
+                <li class="footer_address"> <i class="fas fa-map-signs"></i> <span>پرند میدان استقلال </span> </li>
+                <li class="footer_email"> <i class="fas fa-envelope" aria-hidden="true"></i> <span><a href="mailto:info@realestate.com"> info@realestate.com </a></span> </li>
+                <li class="footer_phone"> <i class="fas fa-phone-alt"></i> <span><a href="tel:02157459"> 57459</a></span> </li>
+              </ul>
+              <div class="social-icons footer_icon">
+                <ul>
+                  <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Footer End--> 
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="{% static 'assets/js/jquery.min.js' %}"></script> 
+<script src="{% static 'assets/js/popper.min.js' %}"></script> 
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script> 
+<!-- Owl Carousel --> 
+<script src="{% static 'assets/js/owl.carousel.js' %}"></script> 
+<!-- wow js --> 
+<script src="{% static 'assets/js/animate.js' %}"></script> 
+<script>
+  new WOW().init();
+</script> 
+<!-- general script file --> 
+<script src="{% static 'assets/js/wow.js' %}"></script> 
+<script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>

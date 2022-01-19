@@ -1,0 +1,667 @@
+
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+<link href="{% static 'assets/css/all.css' %}" rel="stylesheet">
+<!-- Owl Carousel CSS -->
+<link href="{% static 'assets/css/owl.carousel.css' %}" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+<link href="{% static 'assets/css/animate.css' %}" rel="stylesheet">
+<link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+<title>Real Estate</title>
+</head>
+<body>
+<!--Topbar Start-->
+<div class="topbar-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-4">
+        <ul class="social_media style_none">
+          <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+          <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+      <div class="col-lg-6 col-md-8">
+        <div class="top_right">
+          <div class="topbar_phone"><a href="#"><i class="fas fa-phone-alt" aria-hidden="true"></i>09127030370 </a></div>
+          <div class="topbar_login"><a href="submit_property.html"> ثبت ملک</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Topbar End--> 
+
+<!--Header Start-->
+<div class="header-wrap wow fadeInUp">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 navbar navbar-expand-lg navbar-light">
+     <div class="header_logo"><a href="#"><img alt="" src=""></a></div>      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      </div>
+      <div class="col-lg-9">
+        <nav class="navbar navbar-expand-lg navbar-light"> <a class="navbar-brand" href="#">Navbar</a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <button class="close-toggler" type="button" data-toggle="offcanvas"> <span><i class="fas fa-times-circle" aria-hidden="true"></i></span> </button>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html"> خانه </a> 
+                
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#"> املاک </a> 
+               
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#."> امکانات </a> 
+                
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#."> صفحات </a> 
+                
+              </li>
+              <li class="nav-item"><a class="nav-link" href="blog.html"> وبلاگ </a> 
+                
+              <li class="nav-item"><a class="nav-link" href="contact.html"> تماس با ما</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Header End--> 
+
+<!--slider start-->
+<div class="slider-wrap wow fadeInUp">
+  <div class="container">
+    <div class="sliderTxt">
+      <h1>خانه رویایی خود را پیدا کنید</h1>
+      <p></p>
+      <div id="exTab1" class="container">
+        <ul  class="nav nav-pills">
+          <li> <a href="#1a" class="active" data-toggle="tab">خرید ملک</a> </li>
+          <li><a href="#2a" data-toggle="tab">اجاره ملک</a> </li>
+        </ul>
+        <div class="tab-content clearfix">
+          <div class="tab-pane active" id="1a">
+            <div class="form-wrap">
+              <form>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="input-group origin">
+                      <input type="text" name=" Origin" placeholder="ملک ، موقعیت مکانی را وارد کنید ..." class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="input-group destination">
+                      <input type="text" name=" Destination" placeholder="شهر" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="input-group">
+                      
+                        <input type="text" name=" Destination" placeholder="شهر" class="form-control">
+                     
+                    </div>
+                  </div>
+                  <div class="col-lg-3 end_date">
+                    <div class="input-group">
+                      
+                        <input type="text" name=" Destination" placeholder="شهر" class="form-control">
+
+                    </div>
+                  </div>
+                  <div class="col-lg-3 economy">
+                    <div class="input-group">
+                      <input type="text" name=" Destination" placeholder="شهر" class="form-control">
+                      
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="input-group">
+                      <input type="text" name=" Destination" placeholder="شهر" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="input-btn">
+                      <button class="sbutn"><i class="fa fa-search" aria-hidden="true"></i> جستجو </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="tab-pane" id="2a">
+            <div class="form-wrap">
+              <form>
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="input-group origin">
+                      <input type="text" name=" Origin" placeholder="ملک ، موقعیت مکانی را وارد کنید ..." class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="input-group destination">
+                      <input type="text" name=" Destination" placeholder="موقعیت" class="form-control">
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
+                    <div class="input-group">
+                      <div class="nice-select form-control wide select_option" tabindex="0"><span class="current">نوع ملک</span>
+                        <ul class="list">
+                          <li data-value="Property Type" data-display="Property Type" class="option selected focus">نوع ملک</li>
+                          <li data-value="Residential" class="option">مسکونی</li>
+                          <li data-value="Commercial" class="option">تجاری</li>
+                          <li data-value="Land" class="option">زمین</li>
+                          <li data-value="Luxury" class="option">لوکس</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 end_date">
+                    <div class="input-group">
+                      <div class="nice-select form-control wide select_option" tabindex="0"><span class="current">اتاق خواب</span>
+                        <ul class="list">
+                          <li data-value="Bedrooms" data-display="Bedrooms" class="option selected focus">اتاق خواب</li>
+                          <li data-value="1" class="option">1</li>
+                          <li data-value="2" class="option">2</li>
+                          <li data-value="3" class="option">3</li>
+                          <li data-value="4" class="option">4</li>
+                          <li data-value="5" class="option">5</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 economy">
+                    <div class="input-group">
+                      <div class="nice-select form-control wide select_option" tabindex="0"><span class="current">حمام</span>
+                        <ul class="list">
+                          <li data-value="Bathrooms" data-display="Bathrooms" class="option selected">حمام</li>
+                          <li data-value="1" class="option">1</li>
+                          <li data-value="2" class="option">2</li>
+                          <li data-value="3" class="option">3</li>
+                          <li data-value="4" class="option">4</li>
+                          <li data-value="5" class="option">5</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="input-group">
+                      <div class="nice-select form-control wide select_option" tabindex="0"><span class="current">قیمت</span>
+                        <ul class="list">
+                          <li data-value="Property Type" data-display="Property Type" class="option selected focus">قیمت ملک</li>
+                          <li data-value="Residential" class="option">999  تومان - 1999 تومان</li>
+                          <li data-value="Commercial" class="option">1999 تومان - 2999 تومان</li>
+                          <li data-value="Land" class="option">2999 تومان - 3999 تومان</li>
+                          <li data-value="Luxury" class="option">3999 تومان - 4999 تومان</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2">
+                    <div class="input-btn">
+                      <button class="sbutn"><i class="fa fa-search" aria-hidden="true"></i> جستجو </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--slider end--> 
+
+<!--Properties Start-->
+<div class="property-wrap wow fadeInUp">
+  <div class="container">
+    <div class="title">
+      <h1>ملک های ویژه <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم.</span></h1>
+    </div>
+    
+    <!--Row Start-->
+    <ul class="row">
+      <!--col-lg-4 Start-->
+      <li class="col-lg-4">
+        <div class="property_box wow fadeInUp">
+          <div class="propertyImg"><img alt="" src="{% static 'assets/images/propertyImg01.jpg' %}"></div>
+          <h3><a href="#">ویلایی شمالی فاز 2 برای فروش</a></h3>
+          <div class="property_location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> پرند / فاز 3</div>
+          <div class="heart_info">
+            <div class="heart_icon"><a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a></div>
+            <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div>
+            <div class="property_price">488000000 تومان</div>
+          </div>
+          <div class="propert_info">
+            <ul class="row">
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bedroom_icon.png' %}"></div>
+                <h5>اتاق خواب 3</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bathroom_icon.png' %}"></div>
+                <h5>حمام 2</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/garage_icon.png' %}"></div>
+                <h5>پارکینگ 1</h5>
+              </li>
+            </ul>
+          </div>
+          <div class="rent_info">
+            <div class="apart">آپارتمان</div>
+            <div class="sale">برای فروش</div>
+          </div>
+        </div>
+      </li>
+      <!--col-lg-4 End--> 
+      
+      <!--col-lg-4 Start-->
+      <li class="col-lg-4">
+        <div class="property_box wow fadeInUp">
+          <div class="propertyImg"><img alt="" src="{% static 'assets/images/propertyImg02.jpg' %}"></div>
+          <h3><a href="#">آپارتمان با کیفیت فروشی</a></h3>
+          <div class="property_location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> پرند  / فاز 2</div>
+          <div class="heart_info">
+            <div class="heart_icon"><a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a></div>
+            <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div>
+            <div class="property_price">488000000 تومان</div>
+          </div>
+          <div class="propert_info">
+            <ul class="row">
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bedroom_icon.png' %}"></div>
+                <h5>اتاق خواب 3</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bathroom_icon.png' %}"></div>
+                <h5>حمام 2</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/garage_icon.png' %}"></div>
+                <h5>پارکینگ 1</h5>
+              </li>
+            </ul>
+          </div>
+          <div class="rent_info">
+            <div class="apart">آپارتمان</div>
+            <div class="sale">برای فروش</div>
+          </div>
+        </div>
+      </li>
+      <!--col-lg-4 End--> 
+      
+      <!--col-lg-4 Start-->
+      <li class="col-lg-4">
+        <div class="property_box wow fadeInUp">
+          <div class="propertyImg"><img alt="" src="{% static 'assets/images/propertyImg03.jpg' %}"></div>
+          <h3><a href="#">اپارتمان برای اجاره</a></h3>
+          <div class="property_location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> پرند  / فاز 1</div>
+          <div class="heart_info">
+            <div class="heart_icon"><a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a></div>
+            <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div>
+            <div class="property_price">488000000 تومان</div>
+          </div>
+          <div class="propert_info">
+            <ul class="row">
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bedroom_icon.png' %}"></div>
+                <h5>اتاق خواب 3</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bathroom_icon.png' %}"></div>
+                <h5>حمام 2</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/garage_icon.png' %}"></div>
+                <h5>پارکینگ 1</h5>
+              </li>
+            </ul>
+          </div>
+          <div class="rent_info">
+            <div class="apart">آپارتمان</div>
+            <div class="sale">برای فروش</div>
+          </div>
+        </div>
+      </li>
+      <!--col-lg-4 End-->
+    </ul>
+    <!--Row End--> 
+    
+  </div>
+</div>
+<!--Properties End--> 
+
+<!--Buy and Sell Start-->
+<div class="buy-wrap wow fadeInUp">
+  <div class="container">
+    <div class="title">
+      <h1>خانه بخرید یا بفروشید</h1>
+    </div>
+    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی.</p>
+    <div class="start_btn"> <span><a href="#">جستجو را شروع کنید</a></span> <span><a href="#">ویژگی ها را مرور کنید</a></span> </div>
+  </div>
+</div>
+<!--Buy and Sell Start--> 
+
+<!-- popular start -->
+<section class="popular_wrap wow fadeInUp">
+  <div class="container">
+    <h1>مکان های محبوب</h1>
+    <span>لورم ایپسوم متن ساختگی با تولید سادگی</span>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="popular_img position-relative"> <img alt="" src="{% static 'assets/images/2.jpg' %}">
+          <div class="popular_img_text"><a href="#">فاز 2</a></div>
+        </div>
+      </div>
+      <div class="col-md-4 mt_md">
+        <div class="popular_img position-relative"> <img alt="" src="{% static 'assets/images/1.jpg' %}">
+          <div class="popular_img_text"><a href="#">فاز 1</a></div>
+        </div>
+        <div class="popular_img position-relative mt"> <img alt="" src="{% static 'assets/images/3.jpg' %}">
+          <div class="popular_img_text"><a href="#">فاز 3</a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="popular_img position-relative mt"> <img alt="" src="{% static 'assets/images/4.jpg' %}">
+          <div class="popular_img_text"><a href="#">فاز 4</a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="popular_img position-relative mt"> <img alt="" src="{% static 'assets/images/5.jpg' %}">
+          <div class="popular_img_text"><a href="#">فاز 5</a></div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="popular_img position-relative mt"> <img alt="" src="{% static 'assets/images/6.jpg' %}">
+          <div class="popular_img_text"><a href="#">فاز 6</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- popular end --> 
+
+<!--Properties rent Start-->
+<div class="property-wrap property_rent wow fadeInUp">
+  <div class="container">
+    <div class="title">
+      <h1>املاک برای اجاره <span></span></h1>
+    </div>
+    
+    <!--Row Start-->
+    <ul class="row">
+      <!--col-lg-4 Start-->
+      <li class="col-lg-4">
+        <div class="property_box wow fadeInUp">
+          <div class="propertyImg"><img alt="" src="{% static 'assets/images/propertyImg01.jpg' %}"></div>
+          <h3><a href="#">ویلایی شمالی فاز 2 برای فروش</a></h3>
+          <div class="property_location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> پرند  / فاز 2</div>
+          <div class="heart_info">
+            <div class="heart_icon"><a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a></div>
+            <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div>
+            <div class="property_price">488000000 تومان</div>
+          </div>
+          <div class="propert_info">
+            <ul class="row">
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bedroom_icon.png' %}"></div>
+                <h5>اتاق خواب 3</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bathroom_icon.png' %}"></div>
+                <h5>حمام 2</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/garage_icon.png' %}"></div>
+                <h5>پارکینگ 1</h5>
+              </li>
+            </ul>
+          </div>
+          <div class="rent_info">
+            <div class="apart">آپارتمان</div>
+            <div class="sale">برای فروش</div>
+          </div>
+        </div>
+      </li>
+      <!--col-lg-4 End--> 
+      
+      <!--col-lg-4 Start-->
+      <li class="col-lg-4">
+        <div class="property_box wow fadeInUp">
+          <div class="propertyImg"><img alt="" src="{% static 'assets/images/propertyImg02.jpg' %}"></div>
+          <h3><a href="#">آپارتمان شخصی</a></h3>
+          <div class="property_location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> پرند / فاز 5</div>
+          <div class="heart_info">
+            <div class="heart_icon"><a href="#"><i class="fa fa-heart" aria-hidden="true"></i></a></div>
+            <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div>
+            <div class="property_price">488000000 تومان</div>
+          </div>
+          <div class="propert_info">
+            <ul class="row">
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bedroom_icon.png' %}"></div>
+                <h5>اتاق خواب 3</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bathroom_icon.png' %}"></div>
+                <h5>حمام 2</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/garage_icon.png' %}"></div>
+                <h5>پارکینگ 1</h5>
+              </li>
+            </ul>
+          </div>
+          <div class="rent_info">
+            <div class="apart">آپارتمان</div>
+            <div class="sale">برای فروش</div>
+          </div>
+        </div>
+      </li>
+      <!--col-lg-4 End--> 
+      
+      <!--col-lg-4 Start-->
+      <li class="col-lg-4">
+        <div class="property_box  wow fadeInUp">
+          <div class="propertyImg"><img alt="" src="{% static 'assets/images/propertyImg03.jpg' %}"></div>
+          <h3><a href="#">ویلایی شمالی پرند برای فروش</a></h3>
+          <div class="property_location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> پرند  / فاز 4</div>
+          <div class="heart_info">
+            <div class="heart_icon"><a href="#"><i class="fas fa-heart" aria-hidden="true"></i></a></div>
+            <div class="heart_icon exchange_icon"><a href="#"><i class="fas fa-exchange-alt"></i></a></div>
+            <div class="property_price">488000000 تومان</div>
+          </div>
+          <div class="propert_info">
+            <ul class="row">
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bedroom_icon.png' %}"></div>
+                <h5>اتاق خواب 3</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/bathroom_icon.png' %}"></div>
+                <h5>حمام 2</h5>
+              </li>
+              <li class="col-4">
+                <div class="proprty_icon"><img alt="" src="{% static 'assets/images/garage_icon.png' %}"></div>
+                <h5>پارکینگ 1</h5>
+              </li>
+            </ul>
+          </div>
+          <div class="rent_info">
+            <div class="apart">آپارتمان</div>
+            <div class="sale">برای فروش</div>
+          </div>
+        </div>
+      </li>
+      <!--col-lg-4 End-->
+    </ul>
+    <!--Row End--> 
+    
+  </div>
+</div>
+<!--Properties End--> 
+
+<!-- perfect home start -->
+<section class="perfect_home_wrap wow fadeInUp">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-8">
+        <div class="perfect_text">
+          <h1>می خواهید خانه ایده آل خود را پیدا کنید؟</h1>
+          <span>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</span> </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="readmore"><a href="#">ویژگی ها را مرور کنید</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- perfect home end --> 
+
+<!-- our team start -->
+<section class="our_team_wrap wow fadeInUp">
+  <div class="container">
+    <h1>مشاوران ما</h1>
+    <span>لورم ایپسوم متن ساختگی با تولید سادگی</span>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="team_wrp">
+          <div class="team_member  wow fadeInUp">
+            <div class="team_img"><img alt="" src="{% static 'assets/images/team_1.png' %}"></div>
+            <div class="team_icons">
+              <ul>
+                <li><a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a></li>    
+                <li><a href=""><i class="fab fa-whatsapp " aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="team_name">
+              <h3>محمد رضا بیات</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="team_wrp">
+          <div class="team_member wow fadeInUp">
+            <div class="team_img"><img alt="" src="{% static 'assets/images/team_2.png' %}"></div>
+            <div class="team_icons">
+              <ul>
+                <li><a href=""><i class="fab fa-instagram" aria-hidden="true"></i></a></li>    
+                <li><a href=""><i class="fab fa-whatsapp " aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="team_name">
+              <h3>حبیب بیات </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+<!-- our team  end --> 
+
+<!--Footer Start-->
+<footer class="footer bg-style wow fadeInUp">
+  <div class="container">
+    <div class="footer-upper">
+      <div class="row">
+        <div class="col-lg-3 col-md-12">
+          <div class="footer-widget about-widget"> <a href="#"> <img src="{% static 'assets/images/logo2.png' %}" alt="Awesome Image"> </a>
+            <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است.</p>
+            <div class="readmore"><a href="#">بیشتر </a></div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="footer-widget quick-links">
+            <h3 class="title">لینک های سریع</h3>
+            <ul>
+              <li><a href="#."> خانه</a> </li>
+              <li><a href="#."> خصوصیات</a> </li>
+              <li><a href="#."> مشاوران</a> </li>
+              <li><a href="#."> وبلاگ</a> </li>
+              <li><a href="#."> تماس با ما</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5">
+          <div class="footer-widget contact">
+            <h3 class="title">ویژگی های اخیر</h3>
+            <ul class="property_sec">
+              <li>
+                <div class="rec_proprty">
+                  <div class="propertyImg"><img src="{% static 'assets/images/property_small01.jpg' %}"></div>
+                  <div class="property_info">
+                    <h4><a href="#">پرند فاز 2</a></h4>
+                    <p>خیابان هستی , ساختمان مهر</p>
+                    <div class="priceWrp">980000000 تومان</div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="rec_proprty">
+                  <div class="propertyImg"><img src="{% static 'assets/images/property_small02.jpg' %}"></div>
+                  <div class="property_info">
+                    <h4><a href="#">پرند فاز 3</a></h4>
+                    <p>خیابان هستی , ساختمان مهر</p>
+                    <div class="priceWrp">980000000 تومان</div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4">
+          <div class="footer-widget contact">
+            <h3 class="title">اطلاعات تماس</h3>
+            <ul class="footer-adress">
+              <li class="footer_address"> <i class="fas fa-map-signs"></i> <span>پرند , فاز 2 , خیابان آسمان</span> </li>
+              <li class="footer_email"> <i class="fas fa-envelope" aria-hidden="true"></i> <span><a href="mailto:info@realestate.com"> info@realestate.com </a></span> </li>
+              <li class="footer_phone"> <i class="fas fa-phone-alt"></i> <span><a href="tel:09127030370"> 09127030370</a></span> </li>
+            </ul>
+            <div class="social-icons footer_icon">
+              <ul>
+                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--Footer End--> 
+
+<!-- Optional JavaScript --> 
+<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
+<script src="{% static 'assets/js/jquery.min.js' %}"></script> 
+<script src="{% static 'assets/js/popper.min.js' %}"></script> 
+<script src="{% static 'assets/js/bootstrap.min.js' %}"></script> 
+<!-- Owl Carousel --> 
+<script src="{% static 'assets/js/owl.carousel.js' %}"></script> 
+<!-- wow js --> 
+<script src="{% static 'assets/js/animate.js' %}"></script> 
+<script>
+  new WOW().init();
+</script> 
+<!-- general script file --> 
+<script src="{% static 'assets/js/wow.js' %}"></script> 
+<script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>

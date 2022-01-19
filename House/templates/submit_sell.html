@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block base %}
+    
+
+<div class="innercontent property_submit">
+  <div class="container">
+    <h3 class="desc_head">اطلاعات اولیه</h3>
+    <div class="formcol">
+      <form class="form mb-md50" id="contact-form" method="post" action="" novalidate="">
+        {% csrf_token %}
+        <div class="messages"></div>
+        <div class="controls">
+          <div class="row">
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="title" type="text" class="form-control" placeholder="عنوان ملک">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="Name" type="text" class="form-control" placeholder="نام مشتری">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="Phone" type="text" class="form-control" placeholder="شماره تلفن">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="price" type="text" class="form-control" placeholder="قیمت">
+              </div>
+            </div>
+            
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="room" type="text" class="form-control" placeholder="اتاق">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="Floor" type="text" class="form-control" placeholder="طبقه">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="size" type="text" class="form-control" placeholder="متراژ">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="phase" type="text" class="form-control" placeholder="فاز">
+              </div>
+            </div>
+            <div class="col-lg-3">
+              <div class="form-group">
+                <input name="elsei2" type="text" class="form-control" placeholder="پروژه">
+              </div>
+            </div>
+            <div class="col-lg-9">
+              <div class="form-group">
+                <input name="Address" type="text" class="form-control" placeholder="ادرس">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group has-error has-danger">
+                <textarea name="elsei" class="form-control" placeholder="توضیحات"></textarea>
+              </div>
+            </div>
+
+            
+          </div>
+          
+
+          
+            <div class="col-lg-12 contact-wrap">
+              <div class="contact-btn">
+                <button type="submit" class="sub">ارسال ملک <i class="fa fa-arrow-circle-left" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!--Inner Content End--> 
+{% endblock %}
